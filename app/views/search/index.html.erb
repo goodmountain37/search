@@ -1,0 +1,6 @@
+<h2><%= "#{@title_select}" %> search for <%=  "'#{@search}'" %></h2>
+<% if @title_select == "User" %>
+  <%= render "/users/index", users: @users %>
+<% else %>
+  <%= render "/books/index", books: @books %>
+<% end %>
